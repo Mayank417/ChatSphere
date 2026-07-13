@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium Emerald to Teal Gradient -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+    
+    <!-- Top Gloss Reflection for 3D Sphere Effect -->
+    <linearGradient id="glassReflect" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+    
+    <!-- Soft Drop Shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#042F2E" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Main Sphere/Chat Bubble Body -->
+  <path d="M256 64 C150 64 64 150 64 256 C64 304 81.5 348 110 381 L86 448 L160 417 C189 436 221 448 256 448 C362 448 448 362 448 256 C448 150 362 64 256 64 Z" fill="url(#brandGrad)" filter="url(#softShadow)"/>
+  
+  <!-- Glassy Overlay for 3D Shine -->
+  <path d="M256 64 C150 64 64 150 64 256 C64 304 81.5 348 110 381 L86 448 L160 417 C189 436 221 448 256 448 C362 448 448 362 448 256 C448 150 362 64 256 64 Z" fill="url(#glassReflect)"/>
+  
+  <!-- Inner Detail: Modern Voice/Activity Wave -->
+  <rect x="184" y="216" width="24" height="80" rx="12" fill="white" />
+  <rect x="244" y="156" width="24" height="200" rx="12" fill="white" />
+  <rect x="304" y="236" width="24" height="40" rx="12" fill="white" />
+</svg>
