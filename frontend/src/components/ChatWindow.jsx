@@ -106,7 +106,7 @@ function ChatWindow() {
       const res = await sendMessage(formData);
       setMessages((prev) => [...prev, res.data]);
       
-      socket.emit("sendMessage", { ...res.data, receiverId: selectedChat.id });
+      socket.emit("sendMessage", { ...res.data, receiverId: selectedChat._id });
 
       setText("");
       removeImage();

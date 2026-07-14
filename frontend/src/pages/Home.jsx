@@ -21,7 +21,7 @@ function Home() {
 
   useEffect(() => {
     if (currentUser) {
-      socket.emit("addUser", currentUser.id);
+      socket.emit("addUser", currentUser._id);
     }
 
     socket.on("getOnlineUsers", (users) => {
